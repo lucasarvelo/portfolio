@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
   });
 
-  $('.side-nav li, .outer-nav li').click(function(){
+  $('.side-nav li, .outer-nav li').on('click', function(){
 
     if (!($(this).hasClass('is-active'))) {
 
@@ -51,7 +51,7 @@ $( document ).ready(function() {
 
   });
 
-  $('.cta').click(function(){
+  $('.cta').on('click', function(){
 
     var curActive = $('.side-nav').find('.is-active'),
         curPos = $('.side-nav').children().index(curActive),
@@ -73,7 +73,7 @@ $( document ).ready(function() {
 
   });
 
-  $(document).keyup(function(e){
+  $(document).on( 'keyup', function(e){
 
     if (!($('.outer-nav').hasClass('is-vis'))) {
       e.preventDefault();
@@ -153,7 +153,7 @@ $( document ).ready(function() {
 
   function outerNav() {
 
-    $('.header--nav-toggle').click(function(){
+    $('.header--nav-toggle').on('click', function(){
 
       $('.perspective').addClass('perspective--modalview');
       setTimeout(function(){
@@ -163,7 +163,7 @@ $( document ).ready(function() {
 
     });
 
-    $('.outer-nav--return, .outer-nav li').click(function(){
+    $('.outer-nav--return, .outer-nav li').on('click', function(){
 
       $('.perspective').removeClass('effect-rotate-left--animate');
       setTimeout(function(){
@@ -177,7 +177,7 @@ $( document ).ready(function() {
 
   function workSlider() {
 
-    $('.slider--prev, .slider--next').click(function() {
+    $('.slider--prev, .slider--next').on('click', function() {
 
       var $this = $(this),
           curLeft = $('.slider').find('.slider--item-left'),
@@ -255,7 +255,7 @@ $( document ).ready(function() {
 
   function transitionLabels() {
 
-    $('.work-request--information input').focusout(function(){
+    $('.work-request--information input').on( 'focusout', function(){
 
       var textVal = $(this).val();
 
