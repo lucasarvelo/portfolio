@@ -1098,44 +1098,44 @@ body {
     justify-content: center;
   }
 }
-.contact--lockup .modal {
+.contact--lockup .modal-contact {
   padding: 45px 45px;
   text-align: center;
   background-color: #0c0c0c;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
 }
-.contact--lockup .modal--information p,
-.contact--lockup .modal--information a {
+.contact--lockup .modal-contact--information p,
+.contact--lockup .modal-contact--information a {
   display: block;
   margin: 14px 0;
   text-decoration: none;
   color: #fff;
   font-weight: 700;
 }
-.contact--lockup .modal--information p {
+.contact--lockup .modal-contact--information p {
   margin-top: 0;
 }
-.contact--lockup .modal--options {
+.contact--lockup .modal-contact--options {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.contact--lockup .modal--options > li {
+.contact--lockup .modal-contact--options > li {
   width: 130px;
   margin: 0 auto 25px auto;
 }
-.contact--lockup .modal--options li:nth-child(1) {
+.contact--lockup .modal-contact--options li:nth-child(1) {
   background-color: #1769ff;
 }
-.contact--lockup .modal--options li:nth-child(2) {
+.contact--lockup .modal-contact--options li:nth-child(2) {
   background-color: #ea4c89;
 }
-.contact--lockup .modal--options li:nth-child(3) {
+.contact--lockup .modal-contact--options li:nth-child(3) {
   margin-bottom: 0;
   background-color: #943cbd;
   text-transform: uppercase;
 }
-.contact--lockup .modal--options a {
+.contact--lockup .modal-contact--options a {
   display: block;
   width: 100%;
   padding: 8px 0;
@@ -1431,4 +1431,18 @@ body {
 }
 .outer-nav li.is-vis:nth-child(5) {
   transition-delay: 0.16s;
+}
+
+.modal-customization.modal {
+  background: #0c0c0c;
+  text-align: justify;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-content > i {
+  font-size: 4rem;
+  margin: 20px 20px 5px 20px;
 }

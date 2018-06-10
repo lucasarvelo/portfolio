@@ -273,6 +273,16 @@ $( document ).ready(function() {
 
   }
 
+  function modalFade(){
+    $('a.open-modal').on('click', function(event) {
+      $(this).modal({
+        fadeDuration: 250
+      });
+      return false;
+    });
+  }
+
+  modalFade();
   outerNav();
   workSlider();
   transitionLabels();
