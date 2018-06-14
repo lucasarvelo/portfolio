@@ -1441,8 +1441,21 @@ body {
 .modal-content {
   text-align: center;
 }
-
-.modal-content > i {
+.modal-content i {
   font-size: 4rem;
   margin: 20px 20px 5px 20px;
+  color: #fff;
+  transition: color 0.5s;
+}
+.modal-content i:active {
+  color: #fff;
+}
+.modal-content i:visited {
+  color: #fff;
+}
+.modal-content i:link {
+  color: #fff;
+}
+.modal-content i:hover {
+  color: #943cbd;
 }
