@@ -2,11 +2,9 @@
 
 ### [Used Global Template like base for this project](http://buckymaler.com/global)
 
-My first personal portfolio project.
+My first personal portfolio project. 
 
-The changes will be constant, 
-
-This project was developed with HTML5, Sass, jQuery, and Hammer.js.
+This project was developed with HTML5, Sass, jQuery, JQuery Modal and Hammer.js.
 
 Performance basics are covered: assets are minified into single CSS and JS files, and the images are optimized.
 
