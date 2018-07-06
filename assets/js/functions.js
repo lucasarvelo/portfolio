@@ -7,7 +7,7 @@ $( document ).ready(function() {
       scrollController = null;
   $(this).on('mousewheel DOMMouseScroll', function(e){
 
-    if (!($('.outer-nav').hasClass('is-vis'))) {
+    if (!($('.outer-nav').hasClass('is-vis')) && !(isModalOpen())) {
 
       e.preventDefault();
 
@@ -75,7 +75,7 @@ $( document ).ready(function() {
 
   $(document).on( 'keyup', function(e){
 
-    if (!($('.outer-nav').hasClass('is-vis'))) {
+    if (!($('.outer-nav').hasClass('is-vis')) && !(isModalOpen())) {
       e.preventDefault();
       updateHelper(e);
     }
@@ -280,6 +280,16 @@ $( document ).ready(function() {
       });
       return false;
     });
+  }
+
+  //Return true if modal is open
+
+  function isModalOpen(){
+    const modalIds = ['#modal-about-me', '#modal-skills', '#modal-find-me'];
+    return modalIds.some(function(element){ 
+        return $(element).css('display') === 'inline-block'
+      }
+    );
   }
 
   modalFade();
