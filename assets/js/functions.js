@@ -368,7 +368,6 @@ $(document).ready(function() {
     });
   }
 
-  contactForm();
   modalFade();
   outerNav();
   workSlider();
