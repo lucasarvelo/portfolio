@@ -1,4 +1,4 @@
-# [Portfolio: Lucas Arvelo](https://lucasarvelo.com)
+# [Portfolio: Lucas Arvelo](https://lucasarvelo.github.io/portfolio/)
 
 ### [Used Global Template like base for this project](http://buckymaler.com/global)
 
@@ -8,7 +8,7 @@ This project was developed with HTML5, Sass, jQuery, JQuery Modal and Hammer.js.
 
 Performance basics are covered: assets are minified into single CSS and JS files, and the images are optimized.
 
-[LIVE PREVIEW](http://lucasarvelo.com)
+[LIVE PREVIEW](https://lucasarvelo.github.io/portfolio/)
 
 ## Misc:
 
