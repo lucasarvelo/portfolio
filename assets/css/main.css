@@ -538,6 +538,9 @@ body {
 .side-nav li:nth-child(5)::before {
   content: "[4]";
 }
+.side-nav li:nth-child(6)::before {
+  content: "[5]";
+}
 .side-nav li.is-active {
   color: #943cbd;
   transition: color 0.4s ease-in-out;
@@ -1441,6 +1444,9 @@ body {
 .modal-content {
   text-align: center;
 }
+.modal-content a {
+  text-decoration: none;
+}
 .modal-content i {
   font-size: 4rem;
   margin: 20px 20px 5px 20px;
@@ -1458,4 +1464,178 @@ body {
 }
 .modal-content i:hover {
   color: #943cbd;
+}
+
+.blog {
+  position: relative;
+  display: flex;
+  width: 900px;
+  max-width: 75%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  .blog {
+    max-width: 100%;
+  }
+}
+.blog--banner {
+  position: relative;
+  height: 475px;
+}
+.blog--banner::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: -15px;
+  right: 0;
+  height: 2px;
+  background-color: #282828;
+}
+.blog--banner::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #943cbd;
+}
+.blog--banner h1 {
+  position: relative;
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 1;
+}
+.blog--banner a {
+  position: relative;
+  padding: 5px 17px 5px 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+.blog--banner a .btn-background {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  right: 0;
+  height: 100%;
+  background-color: #943cbd;
+  z-index: -1;
+  transition: left 0.2s ease-in-out;
+}
+.blog--banner a:hover .btn-background {
+  left: 0;
+}
+.blog--banner a:focus {
+  outline: none;
+}
+.blog--banner a svg {
+  position: relative;
+  left: 5px;
+  width: 15px;
+  fill: #fff;
+}
+.blog--banner img {
+  position: absolute;
+  bottom: 21px;
+  right: -12px;
+}
+.blog--options {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.blog--options > a {
+  max-width: 250px;
+  text-decoration: none;
+  color: #282828;
+  transition: color 0.2s ease-in-out;
+}
+.blog--options > a:hover {
+  color: #fff;
+}
+.blog--options h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.blog--options p {
+  margin-bottom: 0;
+}
+.blog--options p i {
+  font-size: 45px;
+  margin: 3px;
+}
+
+@media (max-width: 900px) {
+  .blog--banner {
+    height: 380px;
+  }
+  .blog--banner h1 {
+    font-size: 55px;
+  }
+  .blog--banner img {
+    width: 430px;
+  }
+  .blog--options > a {
+    margin-right: 30px;
+  }
+  .blog--options > a:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .blog--banner {
+    height: 305px;
+  }
+  .blog--banner h1 {
+    font-size: 44px;
+  }
+  .blog--banner img {
+    width: 330px;
+  }
+  .blog--options {
+    display: block;
+  }
+  .blog--options > a {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .blog--options > a:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .blog--banner {
+    height: 360px;
+  }
+  .blog--banner h1 {
+    font-size: 55px;
+  }
+  .blog--banner img {
+    display: none;
+  }
+}
+@media (max-width: 600px) and (max-height: 750px) {
+  .blog--banner {
+    height: auto;
+  }
+  .blog--banner::before, .blog--banner::after {
+    display: none;
+  }
+  .blog--banner h1 {
+    margin-top: 0;
+  }
+  .blog--options {
+    display: none;
+  }
 }
